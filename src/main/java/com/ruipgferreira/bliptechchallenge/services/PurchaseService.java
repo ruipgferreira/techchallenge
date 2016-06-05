@@ -11,7 +11,7 @@ import com.ruipgferreira.bliptechchallenge.models.Purchase;
 import com.ruipgferreira.bliptechchallenge.repositories.PurchaseRepository;
 
 @Service
-public class PurchaseService {
+public class PurchaseService implements IPurchaseService {
 	
 	private PurchaseRepository purchaseRepository;
 	

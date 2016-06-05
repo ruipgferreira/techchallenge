@@ -14,15 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.ruipgferreira.bliptechchallenge.models.Purchase;
+import com.ruipgferreira.bliptechchallenge.services.IPurchaseService;
 import com.ruipgferreira.bliptechchallenge.services.PurchaseService;
 
 @RestController
 public class PurchaseController {
 	
-	private PurchaseService purchaseSvc;
+	private IPurchaseService purchaseSvc;
 	
 	@Autowired
-	PurchaseController(PurchaseService purchaseSvc) {
+	PurchaseController(IPurchaseService purchaseSvc) {
 		this.purchaseSvc = purchaseSvc;
 	}
 	
