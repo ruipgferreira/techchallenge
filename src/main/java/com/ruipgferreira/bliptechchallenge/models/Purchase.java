@@ -36,6 +36,12 @@ public class Purchase {
 		
 	}
 	
+	public Purchase(Long id, String productType, Date expiresUTC) {
+		this.id = id;
+		this.productType = productType;
+		this.expiresUTC = expiresUTC;
+	}
+	
 	public Long getId() {
 		return id;
 	}

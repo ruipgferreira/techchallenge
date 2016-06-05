@@ -26,6 +26,12 @@ public class PurchaseController {
 		this.purchaseSvc = purchaseSvc;
 	}
 	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public ResponseEntity<String> get() {
+
+        return new ResponseEntity<>("Purchase Controller", HttpStatus.OK);
+	}
+	
     //-------------------Retrieve All Purchases--------------------------------------------------------
 	
 	@RequestMapping(value = "/purchases", method = RequestMethod.GET)
